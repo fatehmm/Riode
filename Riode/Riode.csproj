@@ -8,12 +8,39 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\Manage\" />
+    <Content Remove="wwwroot\Manage\assets\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="Views\Shop\" />
+    <Folder Include="DAL\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="wwwroot\Manage\" />
+    <Folder Include="wwwroot\Manage\assets\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Shop\" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Npgsql" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL.Design" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="DAL\" />
+    <None Remove="Z.EntityFramework.Plus.EFCore" />
+    <None Remove="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Npgsql" Version="6.0.7" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="6.15.2" />
   </ItemGroup>
 </Project>

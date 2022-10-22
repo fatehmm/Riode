@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
     <title>Riode - Ultimate eCommerce Template</title>
 
     <meta name="keywords" content="HTML5 Template" />
@@ -11,35 +13,33 @@
     <meta name="author" content="D-THEMES">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="~/assets/images/icons/favicon.png">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
 
     <script>WebFontConfig = {
-            google: { families: ['Poppins:300,400,500,600,700,800'] }
+            google: { families: ['Poppins:400,500,600,700'] }
         };
         (function (d) {
             var wf = d.createElement('script'), s = d.scripts[0];
-            wf.src = '~/assets/js/webfont.js';
+            wf.src = 'js/webfont.js';
             wf.async = true;
             s.parentNode.insertBefore(wf, s);
         })(document);</script>
 
 
-
-    <link rel="stylesheet" type="text/css" href="~/assets/vendor/fontawesome-free/~/assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="~/assets/vendor/animate/animate.min.css">
 
     <!-- Plugins CSS File -->
     <link rel="stylesheet" type="text/css" href="~/assets/vendor/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" type="text/css" href="~/assets/vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/vendor/nouislider/nouislider.min.css">
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" type="text/css" href="~/assets/css/demo1.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.min.css">
 </head>
 
-<body class="home">
-
+<body class="shop">
     <div class="page-wrapper">
-        <h1 class="d-none">Riode - Responsive eCommerce HTML Template</h1>
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -70,11 +70,11 @@
                         <span class="divider"></span>
                         <a href="contact-us.html" class="contact d-lg-show"><i class="d-icon-map"></i>Contact</a>
                         <a href="#" class="help d-lg-show"><i class="d-icon-info"></i> Need Help</a>
-                        <a class="login-link" href="~/assets/ajax/login.html" data-toggle="login-modal">
+                        <a class="login-link" href="ajax/login.html" data-toggle="login-modal">
                             <i class="d-icon-user"></i>Sign in
                         </a>
                         <span class="delimiter">/</span>
-                        <a class="register-link ml-0" href="~/assets/ajax/login.html" data-toggle="login-modal">Register</a>
+                        <a class="register-link ml-0" href="ajax/login.html" data-toggle="login-modal">Register</a>
                         <!-- End of Login -->
                     </div>
                 </div>
@@ -131,18 +131,18 @@
                                 <div class="cart-header">
                                     <h4 class="cart-title">Shopping Cart</h4>
                                     <a href="#" class="btn btn-dark btn-link btn-icon-right btn-close">
-                                        close<i class="d-icon-arrow-right"></i><span class="sr-only">Cart</span>
+                                        close<i class="d-icon-arrow-right"></i>
                                     </a>
                                 </div>
                                 <div class="products scrollable">
                                     <div class="product product-cart">
                                         <figure class="product-media">
-                                            <a href="product.html">
+                                            <a href="#">
                                                 <img src="~/assets/images/cart/product-1.jpg" alt="product" width="80"
                                                      height="88" />
                                             </a>
                                             <button class="btn btn-link btn-close">
-                                                <i class="fas fa-times"></i><span class="sr-only">Close</span>
+                                                <i class="fas fa-times"></i>
                                             </button>
                                         </figure>
                                         <div class="product-detail">
@@ -157,12 +157,12 @@
                                     <!-- End of Cart Product -->
                                     <div class="product product-cart">
                                         <figure class="product-media">
-                                            <a href="product.html">
+                                            <a href="#">
                                                 <img src="~/assets/images/cart/product-2.jpg" alt="product" width="80"
                                                      height="88" />
                                             </a>
                                             <button class="btn btn-link btn-close">
-                                                <i class="fas fa-times"></i><span class="sr-only">Close</span>
+                                                <i class="fas fa-times"></i>
                                             </button>
                                         </figure>
                                         <div class="product-detail">
@@ -192,8 +192,22 @@
                             </div>
                             <!-- End Dropdown Box -->
                         </div>
+                        <div class="header-search hs-toggle mobile-search">
+                            <a href="#" class="search-toggle">
+                                <i class="d-icon-search"></i>
+                            </a>
+                            <form action="#" class="input-wrapper">
+                                <input type="text" class="form-control" name="search" autocomplete="off"
+                                       placeholder="Search your keyword..." required />
+                                <button class="btn btn-search" type="submit">
+                                    <i class="d-icon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- End of Header Search -->
                     </div>
                 </div>
+
             </div>
 
             <div class="header-bottom d-lg-show">
@@ -201,13 +215,49 @@
                     <div class="header-left">
                         <nav class="main-nav">
                             <ul class="menu">
-                                <li class="active">
+                                <li>
                                     <a href="demo1.html">Home</a>
                                 </li>
-                                <li>
-                                    <a asp-controller="Shop" asp-action="Index">Shop</a>
+                                <li class="active">
+                                    <a href="shop.html">Categories</a>
                                     <div class="megamenu">
                                         <div class="row">
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                                <h4 class="menu-title">Variations 1</h4>
+                                                <ul>
+                                                    <li><a href="shop-banner-sidebar.html">Banner With Sidebar</a></li>
+                                                    <li><a href="shop-boxed-banner.html">Boxed Banner</a></li>
+                                                    <li><a href="shop-infinite-scroll.html">Infinite Ajaxscroll</a></li>
+                                                    <li>
+                                                        <a href="shop-horizontal-filter.html">Horizontal Filter</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="shop-navigation-filter.html">
+                                                            Navigation Filter<span class="tip tip-hot">Hot</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li><a href="shop-off-canvas.html">Off-Canvas Filter</a></li>
+                                                    <li><a href="shop-right-sidebar.html">Right Toggle Sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                                <h4 class="menu-title">Variations 2</h4>
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="shop-grid-3cols.html">
+                                                            3 Columns Mode<span class="tip tip-new">New</span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="shop-grid-4cols.html">4 Columns Mode</a></li>
+                                                    <li><a href="shop-grid-5cols.html">5 Columns Mode</a></li>
+                                                    <li><a href="shop-grid-6cols.html">6 Columns Mode</a></li>
+                                                    <li><a href="shop-grid-7cols.html">7 Columns Mode</a></li>
+                                                    <li><a href="shop-grid-8cols.html">8 Columns Mode</a></li>
+                                                    <li><a href="shop-list.html">List Mode</a></li>
+                                                </ul>
+                                            </div>
                                             <div class="col-6 col-sm-4 col-md-3 col-lg-4 menu-banner menu-banner1 banner banner-fixed">
                                                 <figure>
                                                     <img src="~/assets/images/menu/banner-1.jpg" alt="Menu banner" width="221"
@@ -220,7 +270,7 @@
                                                     <h3 class="banner-title font-weight-bold">
                                                         <span class="text-uppercase">Up to</span>70% Off
                                                     </h3>
-                                                    <a asp-controller="Shop" asp-action="Index" class="btn btn-link btn-underline">
+                                                    <a href="#" class="btn btn-link btn-underline">
                                                         shop now<i class="d-icon-arrow-right"></i>
                                                     </a>
                                                 </div>
@@ -294,8 +344,7 @@
                                     <ul>
                                         <li><a href="about-us.html">About</a></li>
                                         <li><a href="contact-us.html">Contact Us</a></li>
-                                        <li><a href="account.html">My Account</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="account.html">Login</a></li>
                                         <li><a href="faq.html">FAQs</a></li>
                                         <li><a href="error-404.html">Error 404</a></li>
                                         <li><a href="coming-soon.html">Coming Soon</a></li>
@@ -369,9 +418,10 @@
             </div>
         </header>
         <!-- End Header -->
-             @RenderBody();
-
-        <!-- End of Main -->
+        <!-- Start Main -->
+        @RenderBody();
+        <!-- Start Main -->
+        <!-- End Main -->
         <footer class="footer">
             <div class="container">
                 <div class="footer-top">
@@ -571,9 +621,9 @@
     <div class="mobile-menu-wrapper">
         <div class="mobile-menu-overlay">
         </div>
-        <!-- End of Overlay -->
+        <!-- End Overlay -->
         <a class="mobile-menu-close" href="#"><i class="d-icon-times"></i></a>
-        <!-- End of CloseButton -->
+        <!-- End CloseButton -->
         <div class="mobile-menu-container scrollable">
             <form action="#" class="input-wrapper">
                 <input type="text" class="form-control" name="search" autocomplete="off"
@@ -582,13 +632,13 @@
                     <i class="d-icon-search"></i>
                 </button>
             </form>
-            <!-- End of Search Form -->
+            <!-- End Search Form -->
             <ul class="mobile-menu mmenu-anim">
                 <li>
                     <a href="demo1.html">Home</a>
                 </li>
                 <li>
-                    <a href="shop.html">Categories</a>
+                    <a href="#" class="active">Categories</a>
                     <ul>
                         <li>
                             <a href="#">
@@ -734,44 +784,17 @@
                 </li>
                 <li><a href="https://d-themes.com/buynow/riodehtml" target="_blank">Buy Riode!</a></li>
             </ul>
-            <!-- End of MobileMenu -->
-            <!-- <ul class="mobile-menu mmenu-anim">
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cart.html">My Cart</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-            </ul> -->
-            <!-- End of MobileMenu -->
+            <!-- End MobileMenu -->
         </div>
     </div>
-
-    <div class="newsletter-popup mfp-hide" id="newsletter-popup" style="background-image: url(~/assets/images/newsletter-popup.jpg)">
-        <div class="newsletter-content">
-            <h4 class="text-uppercase text-dark">Up to <span class="text-primary">20% Off</span></h4>
-            <h2 class="font-weight-semi-bold">Sign up to <span>RIODE</span></h2>
-            <p class="text-grey">
-                Subscribe to the Riode eCommerce newsletter to receive timely updates from your favorite
-                products.
-            </p>
-            <form action="#" method="get" class="input-wrapper input-wrapper-inline input-wrapper-round">
-                <input type="email" class="form-control email" name="email" id="email2" placeholder="Email address here..."
-                       required="">
-                <button class="btn btn-dark" type="submit">SUBMIT</button>
-            </form>
-            <div class="form-checkbox justify-content-center">
-                <input type="checkbox" class="custom-checkbox" id="hide-newsletter-popup" name="hide-newsletter-popup"
-                       required />
-                <label for="hide-newsletter-popup">Don't show this popup again</label>
-            </div>
-        </div>
-    </div>
-
     <!-- Plugins JS File -->
     <script src="~/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="~/assets/vendor/parallax/parallax.min.js"></script>
+    <script src="~/assets/vendor/sticky/sticky.min.js"></script>
     <script src="~/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="~/assets/vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
     <script src="~/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="~/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/assets/vendor/nouislider/nouislider.min.js"></script>
     <!-- Main JS File -->
     <script src="~/assets/js/main.min.js"></script>
 </body>

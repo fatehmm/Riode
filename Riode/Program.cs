@@ -1,7 +1,18 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Riode.DAL;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<RiodeDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
+});
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<RiodeDbContext>();
 
 var app = builder.Build();
 

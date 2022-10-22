@@ -8,41 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Riode
 build_property.RootNamespace = Riode
-build_property.ProjectDir = /Users/fatehmmmdli/Projects/Riode/Riode/
+build_property.ProjectDir = /Users/fatehmmmdli/Desktop/Riode/Riode/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/fatehmmmdli/Projects/Riode/Riode
+build_property.MSBuildProjectDirectory = /Users/fatehmmmdli/Desktop/Riode/Riode
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/Home/Index.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL0NhdGVnb3J5L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL0NhdGVnb3J5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL0NhdGVnb3J5L1VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL0Rhc2hib2FyZC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL1Byb2R1Y3QvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL1Byb2R1Y3QvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL1Byb2R1Y3QvVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL1NoYXJlZC9fQWRtaW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL19WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Areas/Manage/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTWFuYWdlL1ZpZXdzL19WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/Home/Privacy.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/Shared/Error.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/Shop/Index.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Shop/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcC9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/_ViewImports.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/_ViewStart.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatehmmmdli/Projects/Riode/Riode/Views/Shared/_Layout.cshtml]
+[/Users/fatehmmmdli/Desktop/Riode/Riode/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6p2xl2s9j1
